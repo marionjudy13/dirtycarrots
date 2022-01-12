@@ -1,16 +1,49 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
+  display: block;
   min-height: 100vh;
+  width: 100%;
 }
 
 .main {
-  padding: 2rem;
+  /* border: 1px solid pink; */
+  padding: 50px 50px;
+  border-bottom: 1px solid greenyellow;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+}
+
+.img {
+  padding: 5px !important;
 }
 
 h1.title {
-  font-size: 20vw;
+  font-size: 14vw;
   line-height: .8;
 }
+
+.h2 {
+  margin-top: 25px;
+  font-size: 22px;
+  margin-left: 4px;
+}
+
+.h3 {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 24px;
+}
+
+.postLists {
+  /* border: 1px solid purple; */
+  padding: 50px;
+  font-size: 18px;
+}
+
+.postLists ul li {
+  font-family: 'Abhaya Libre', serif;
+  padding-bottom: 10px;
+}
+
