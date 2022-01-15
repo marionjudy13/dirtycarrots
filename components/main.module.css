@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    padding: 40px;
+}
+
+.flexbox {
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: flex-start;
+    width: 100%;
+}
+  
+.flexbox img {
+    margin-left: -10px;
+    margin-bottom: -10px;
+    width: 100px;
+    transform: rotate(320deg);
+    z-index: -1;
+}
+  

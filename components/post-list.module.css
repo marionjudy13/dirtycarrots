@@ -1,0 +1,10 @@
+.postLists {
+    border-top: 1px solid greenyellow;
+    padding: 50px;
+    font-size: 18px;
+}
+  
+.postLists ul li {
+    font-family: 'Abhaya Libre', serif;
+    padding-bottom: 10px;
+}

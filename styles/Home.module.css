@@ -1,34 +1,41 @@
 .container {
   display: block;
+  position: relative;
+  margin: auto;
   min-height: 100vh;
   width: 100%;
 }
 
 .main {
-  /* border: 1px solid pink; */
   padding: 50px 50px;
-  border-bottom: 1px solid greenyellow;
 }
 
 .header {
   display: flex;
-  flex-direction: row-reverse;
   align-items: end;
+  position: relative;
+  justify-content: flex-start;
+  line-height: 100px;
+  width: 100%;
 }
 
-.img {
-  padding: 5px !important;
+.header img {
+  margin-left: -15px;
+  width: 110px;
+  transform: rotate(321deg);
 }
 
 h1.title {
-  font-size: 14vw;
+  font-size: 60px;
   line-height: .8;
+  z-index: 1;;
 }
 
 .h2 {
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 22px;
   margin-left: 4px;
+  max-width: 400px;
 }
 
 .h3 {
@@ -38,6 +45,7 @@ h1.title {
 
 .postLists {
   /* border: 1px solid purple; */
+  border-top: 1px solid greenyellow;
   padding: 50px;
   font-size: 18px;
 }

@@ -1,0 +1,21 @@
+.h1, .h2, .h3 {
+    font-family: 'Abhaya Libre', serif;
+}
+
+.h1 {
+    font-size: 60px;
+    line-height: .8;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+  
+.h2 {
+    margin-top: 15px;
+    font-size: 22px;
+    margin-left: 4px;
+    max-width: 400px;
+}
+
+.h3 {
+    font-size: 24px;
+  }
