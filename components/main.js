@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 export default function Main() {
     return (
     <main className={styles.container}>
-      <div className={styles.flexbox}>
+      <div className={styles.titleFlexbox}>
         <h1 className={utilStyles.h1}>
           Dirty <br />
           Carrots

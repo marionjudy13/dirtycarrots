@@ -1,0 +1,8 @@
+@media (min-width: 1024px) {
+    .mainWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        align-items: flex-end;
+    }
+}

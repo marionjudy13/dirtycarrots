@@ -1,10 +1,41 @@
 .postLists {
-    border-top: 1px solid greenyellow;
+    border-top: 1px solid #89C540;
     padding: 50px;
     font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+@media (min-width: 500px) {
+    .postLists {
+        padding: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .postLists {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .postLists {
+        border: initial;
+        border-left: 2px solid #89C540;
+        max-width: 30%;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    .postLists h3  {
+        width: 100%;
+    }
 }
   
 .postLists ul li {
     font-family: 'Abhaya Libre', serif;
     padding-bottom: 10px;
+    color: blue;
 }
