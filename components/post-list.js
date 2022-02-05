@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import styles from './post-list.module.css'
-import utilStyles from '../styles/utils.module.css'
 
 export default function PostList() {
     return (
-      <section className={styles.postLists}>
-          <h3 className={utilStyles.h3}>The Dirt:</h3>
+      <section>
+          <h3>The Dirt:</h3>
           <ul>
             <li>
               <Link href="/posts/hello-world">
@@ -13,6 +11,25 @@ export default function PostList() {
               </Link>
             </li>
           </ul>
+
+          <style jsx>
+          {`
+            section {
+              margin: auto;
+              max-width: 347px;
+              padding: 30px 40px 0;
+            }
+
+            h3 {
+              font-size: 1.5em;
+            }
+
+            li a {
+              font-size: 1.25em;
+              text-decoration: none;
+            }
+          `}
+          </style>
         </section>
     )
   }
