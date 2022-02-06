@@ -53,6 +53,25 @@ export default function Main() {
         width: 75px;
         transform: rotate(-40deg) translate(-10px, -50px);
       }
+
+      @media (min-width: 769px) {
+        .main-content-wrap {
+          max-width: 450px;
+        }
+
+        h1 {
+          font-size: 5em;
+        }
+
+        img {
+          width: 125px;
+          transform: rotate(-40deg) translate(-40px, -100px);
+        }
+
+        h2 {
+          font-size: 2.15em;
+        }
+      }
     `}</style>
     {/* <style jsx>{`
       main {
