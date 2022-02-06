@@ -7,9 +7,9 @@ export default function Layout({ children }) {
                 {children}
 
                 <style jsx>{`
-                    margin: 40px auto;
                     display: flex;
                     justify-content: center;
+                    margin: 0 auto;
                 `}</style>
             </div>
         </>
