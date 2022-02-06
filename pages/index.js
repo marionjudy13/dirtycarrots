@@ -21,6 +21,14 @@ export default function Home() {
           display: block;
           width: 100%;
         }
+
+        @media (min-width: 769px) {
+          .wrapper {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+          }
+        }
       `}</style>
     </Layout>
   )

@@ -17,9 +17,18 @@ export default function Main() {
       </div>
     <style jsx>{`
       main {
-        border-top: 4px solid var(--green);
-        border-bottom: 4px solid var(--green);
-        padding: 40px;
+        border-bottom: 2px solid var(--green);
+        padding: 50px 40px 40px;
+      }
+
+      @media (min-width: 769px) {
+        main {
+          width: 60%;
+          height: 100vh;
+          display: flex;
+          border-bottom: none;
+          border-right: 2px solid var(--green);
+        }
       }
 
       .main-content-wrap {
@@ -44,7 +53,6 @@ export default function Main() {
         width: 75px;
         transform: rotate(-40deg) translate(-10px, -50px);
       }
-      
     `}</style>
     {/* <style jsx>{`
       main {

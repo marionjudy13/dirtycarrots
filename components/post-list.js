@@ -55,6 +55,12 @@ export default function PostList() {
               padding: 45px;
             }
 
+            @media (min-width: 769px) {
+              section {
+                width: 40%;
+              }
+            }
+
             .content-wrap {
               margin: auto;
               max-width: 400px;
