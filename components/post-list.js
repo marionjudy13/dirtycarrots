@@ -53,11 +53,16 @@ export default function PostList() {
           {`
             section {
               padding: 45px;
+              height: 90vh;
             }
 
             @media (min-width: 769px) {
               section {
+                border-bottom: 2px solid var(--green);
                 width: 40%;
+                display: flex;
+                align-items: center;
+                padding-left: 35px;
               }
             }
 
