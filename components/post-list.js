@@ -4,7 +4,7 @@ export default function PostList() {
     return (
       <section>
         <div className="content-wrap">
-          <h3>The Dirt:</h3>
+          <h3>Dem Carrots:</h3>
           <ul>
             <li>
               <Link href="/posts/hello-world">
@@ -70,6 +70,19 @@ export default function PostList() {
               padding: 40px;
               max-height: 400px;
               overflow: scroll;
+              overflow-x: hidden; 
+            }
+
+            ::-webkit-scrollbar {
+              width: 8px;
+            }
+
+            ::-webkit-scrollbar-track {
+              background: var(--white);
+            }
+
+            ::-webkit-scrollbar-thumb {
+              background: var(--green);
             }
 
             .content-wrap {
@@ -88,6 +101,11 @@ export default function PostList() {
             li a {
               font-size: 1.25em;
               text-decoration: none;
+              transition: color .3s ease;
+            }
+
+            li a:hover {
+              color: var(--orange);
             }
 
             @media (min-width: 769px) {
@@ -101,9 +119,21 @@ export default function PostList() {
                 align-items: center;
                 padding: 60;
                 overflow: scroll;
-
+                overflow-x: hidden; 
               }
 
+              ::-webkit-scrollbar {
+                width: 8px;
+              }
+
+              ::-webkit-scrollbar-track {
+                background: var(--white);
+              }
+
+              ::-webkit-scrollbar-thumb {
+                background: var(--green);
+              }
+              
               .content-wrap {
                 max-width: 315px;
               }

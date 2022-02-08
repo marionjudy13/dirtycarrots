@@ -4,15 +4,16 @@ export default function ContactBar() {
     return (
     <footer>
         <div className="wrapper">
-            <a href="mailto: marion@spiderwebs.dev" target="_blank">marion@spiderwebs.dev</a>
             <Socials />
+            <a href="mailto: marion@spiderwebs.dev" target="_blank">
+                marion@spiderwebs.dev
+            </a>
         </div>
     <style jsx>{`
         footer {
             display: block;
             border-top: 2px solid var(--green);
             padding: 20px 40px;
-
         }
 
         .wrapper {
@@ -25,9 +26,15 @@ export default function ContactBar() {
         }
 
         a {
+            color: var(--green);
             font-size: 1em;
             text-decoration: none;
             line-height: 28px;
+            transition: color .3s ease;
+        }
+
+        a:hover {
+            color: var(--orange);
         }
 
 
@@ -51,11 +58,15 @@ export default function ContactBar() {
 
 
             a {
+                color: var(--green);
                 font-size: 1.25em;
                 text-decoration: none;
                 line-height: 30px;
-                margin-right: 40px;
+                margin-left: 40px;
+                transition: color .3s ease;
             }
+
+
         }
     `}</style>
     </footer>

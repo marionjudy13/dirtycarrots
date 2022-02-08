@@ -6,15 +6,15 @@ export default function Socials() {
     return (
         <div>
             <div className="socials">
-                    <span>
-                        <AiFillGithub />
-                    </span>
-                    <span>
-                        <EnLinkedinWithCircle />
-                    </span>
-                    <span>
-                        <AiFillTwitterCircle />
-                    </span>
+                <a href="#">
+                    <AiFillGithub />
+                </a>
+                <a href="#">
+                    <EnLinkedinWithCircle />
+                </a>
+                <a href="#">
+                    <AiFillTwitterCircle />
+                </a>
             </div>
             <style jsx>{`
                 .socials {
@@ -24,19 +24,28 @@ export default function Socials() {
                     align-items: center;
                 }
 
-                .socials span {
+                .socials a {
                     display: flex;
                     align-items: center;
-                    margin: 0 5px;
+                    margin-right: 8px;
                 }
+
+                a {
+                    transition: color .3s ease;
+                }
+        
+                a:hover {
+                    color: var(--orange);
+                }
+
 
                 @media (min-width: 769px) {
                     .socials {
-                        font-size: 1.85em;
+                        font-size: 2em;
                     }
     
-                    .socials span {
-                        margin: 0 5px;
+                    .socials a {
+                        margin-right: 10px;
                     }
                 }
             `}</style>

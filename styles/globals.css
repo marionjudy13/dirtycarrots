@@ -23,8 +23,10 @@ a {
 }
 
 :root {
-  --super-lite-gray: #F9F9F9;
+  --white: #FFF;
+  --black: #000;
   --green: #89C541;
+  --orange: #F78F1E;
   --brown: #592904;
   --tablet-break: 769px;
 }
