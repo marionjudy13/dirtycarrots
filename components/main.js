@@ -5,7 +5,7 @@ export default function Main() {
         <div className="h1-logo-wrap">
           <img
             src="/images/carrot-01.jpg" // Route of the image file
-            alt="Your Name"
+            alt="Awesome Carrot Illustration"
           />
           <h1>
             Dirty <br />

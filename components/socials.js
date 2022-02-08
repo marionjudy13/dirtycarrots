@@ -6,14 +6,14 @@ export default function Socials() {
     return (
         <div>
             <div className="socials">
-                <a href="#">
-                    <AiFillGithub />
+                <a href="https://github.com/marionrose13">
+                    <AiFillGithub alt="Github Profile" />
                 </a>
-                <a href="#">
-                    <EnLinkedinWithCircle />
+                <a href="https://www.linkedin.com/in/marionerose/">
+                    <EnLinkedinWithCircle alt="LinkedIn Profile" />
                 </a>
-                <a href="#">
-                    <AiFillTwitterCircle />
+                <a href="https://twitter.com/DirtyCarrots13">
+                    <AiFillTwitterCircle alt="Twitter Profile" />
                 </a>
             </div>
             <style jsx>{`
