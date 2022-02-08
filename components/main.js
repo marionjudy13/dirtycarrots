@@ -72,6 +72,26 @@ export default function Main() {
           font-size: 2.15em;
         }
       }
+
+      @media (min-width: 1500px) {
+        .main-content-wrap {
+          max-width: 500px;
+        }
+        h1 {
+          font-size: 8em;
+          line-height: .7;
+        }
+        img {
+          width: 170px;
+          position: absolute;
+          left: 249px;
+          transform: rotate(-35deg);
+          top: -207px;
+        }
+        h2 {
+          font-size: 2.75em;
+        }
+      }
     `}</style>
     </main>
     )

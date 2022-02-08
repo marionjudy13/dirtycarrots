@@ -48,6 +48,16 @@ export default function Socials() {
                         margin-right: 10px;
                     }
                 }
+
+                @media (min-width: 1500px) {
+                    .socials {
+                        font-size: 2.5em;
+                    }
+    
+                    .socials a {
+                        margin-right: 15px;
+                    }
+                  }
             `}</style>
     </div>
     )

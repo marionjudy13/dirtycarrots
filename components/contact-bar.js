@@ -65,9 +65,21 @@ export default function ContactBar() {
                 margin-left: 40px;
                 transition: color .3s ease;
             }
-
-
         }
+
+        @media (min-width: 1500px) {
+            .wrapper {
+                width: 500px;
+                max-width: 500px;
+            }
+
+            a {
+                font-size: 1.3em;
+                text-decoration: none;
+                line-height: 30px;
+                margin-left: 50px;
+            }
+          }
     `}</style>
     </footer>
     )

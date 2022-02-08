@@ -152,6 +152,20 @@ export default function PostList() {
                 text-decoration: none;
               }
             }
+
+            @media (min-width: 1500px) {
+              .content-wrap {
+                max-width: 430px;
+              }
+
+              h3 {
+                font-size: 2.5em;
+              }
+
+              li a {
+                font-size: 2em;
+              }
+            }
           `}
           </style>
         </section>
