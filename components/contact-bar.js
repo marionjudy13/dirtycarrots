@@ -26,7 +26,7 @@ export default function ContactBar() {
         }
 
         a {
-            color: var(--green);
+            color: var(--black);
             font-size: 1em;
             text-decoration: none;
             line-height: 28px;
@@ -58,7 +58,7 @@ export default function ContactBar() {
 
 
             a {
-                color: var(--green);
+                color: var(--black);
                 font-size: 1.25em;
                 text-decoration: none;
                 line-height: 30px;
