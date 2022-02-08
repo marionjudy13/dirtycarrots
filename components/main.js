@@ -73,34 +73,6 @@ export default function Main() {
         }
       }
     `}</style>
-    {/* <style jsx>{`
-      main {
-        max-width: 347px;
-        padding: 20px 40px 30px 40px;
-        margin: auto;
-        border-bottom: 2px solid var(--green);
-
-      }
-
-      .heading-wrapper {
-        display: flex;
-        align-items: end; 
-        margin-bottom: 20px;
-      }
-
-      h1 {
-        font-size: 60px;
-        line-height: .7;
-        z-index: 1;
-        letter-spacing: 1px;
-      }
-
-      img {
-        width: 75px;
-        transform: rotate(-30deg) translate(-20px, -35px);
-      }
-      
-    `}</style> */}
     </main>
     )
   }

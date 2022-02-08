@@ -13,37 +13,52 @@ export default function PostList() {
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>Goodbye World!</a>
               </Link>
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>It's a World!</a>
               </Link>
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>It's a Small World!</a>
               </Link>
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>Sick Sad World!</a>
               </Link>
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>The World is Round!</a>
               </Link>
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>The World is Flat!</a>
               </Link>
             </li>
             <li>
               <Link href="/posts/hello-world">
-                <a>Hello World!</a>
+                <a>The World is a Spaceship!</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/posts/hello-world">
+                <a>Hello Govenor!</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/posts/hello-world">
+                <a>Hello! Can I have just a few minutes of your time?</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/posts/hello-world">
+                <a>Just another test link.</a>
               </Link>
             </li>
           </ul>
@@ -52,33 +67,60 @@ export default function PostList() {
           <style jsx>
           {`
             section {
-              padding: 45px;
-              height: 90vh;
-            }
-
-            @media (min-width: 769px) {
-              section {
-                border-bottom: 2px solid var(--green);
-                width: 40%;
-                display: flex;
-                align-items: center;
-                padding-left: 35px;
-              }
+              padding: 40px;
+              max-height: 400px;
+              overflow: scroll;
             }
 
             .content-wrap {
               margin: auto;
-              max-width: 400px;
+              max-width: 380px;
             }
 
             h3 {
               font-size: 1.5em;
             }
 
+            li {
+              margin-bottom: 15px;
+            }
+
             li a {
               font-size: 1.25em;
-              line-height: 1.5;
               text-decoration: none;
+            }
+
+            @media (min-width: 769px) {
+              section {
+                border-bottom: 2px solid var(--green);
+                max-height: none;
+                overflow: inherit;
+                height: 90vh;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                padding: 60;
+                overflow: scroll;
+
+              }
+
+              .content-wrap {
+                max-width: 315px;
+              }
+
+              h3 {
+                font-size: 2em;
+                margin: 30px 0 30px;
+              }
+  
+              li {
+                margin-bottom: 15px;
+              }
+  
+              li a {
+                font-size: 1.45em;
+                text-decoration: none;
+              }
             }
           `}
           </style>
