@@ -1,16 +1,16 @@
 import styles from '../styles/layout.module.css'
+import Link from 'next/link'
 
 export default function Layout({ children }) {
     return  (
         <>
             <div className={styles.container}>
-                {children}
-
-                <style jsx>{`
-                    display: flex;
-                    justify-content: center;
-                    margin: 0 auto;
-                `}</style>
+                <div className={styles.wrapper}>
+                    {children}
+                    <Link href="/">
+                        <a>Back Home</a>
+                    </Link>
+                </div>
             </div>
         </>
     )
