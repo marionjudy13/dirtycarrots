@@ -1,39 +1,19 @@
 import Link from 'next/link'
 
-
 export default function PostList({posts}) {
     return (
       <section>
         <div className="content-wrap">
           <h3>Dem Carrots:</h3>
           <ul>
-            {posts.map(({ id, date, title }) => (
+            {posts.map(({ id, title }) => (
               <li key={id}>
-                {date}
-                <br />
-                {title}
-                <br />
-                {id}
+                {console.log(id)}
+                  <Link href={`/posts/${id}`}>
+                    {title}
+                  </Link>
               </li>
             ))}
-          </ul>
-          <ul>
-            
-            <li>
-              <Link href="/posts/hello-world">
-                <a>Hello World!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/rss-feed">
-                <a>Adding an RSS Feed!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/adding-stuff-with-js">
-                <a>Adding DOM Elements with JS</a>
-              </Link>
-            </li>
           </ul>
         </div>
 
