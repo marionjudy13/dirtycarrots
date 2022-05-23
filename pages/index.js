@@ -2,8 +2,18 @@ import Head from 'next/head'
 import Main from '../components/main'
 import PostList from '../components/post-list'
 import ContactBar from '../components/contact-bar'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home({ allPostsData }) {
   return (
     <>
       <Head>
@@ -13,7 +23,7 @@ export default function Home() {
 
       <div className="wrapper">
         <Main />
-        <PostList />
+        <PostList posts={allPostsData} />
         <ContactBar />
       </div>
       <style jsx>{`

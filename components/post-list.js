@@ -1,64 +1,37 @@
 import Link from 'next/link'
 
-export default function PostList() {
+
+export default function PostList({posts}) {
     return (
       <section>
         <div className="content-wrap">
           <h3>Dem Carrots:</h3>
           <ul>
+            {posts.map(({ id, date, title }) => (
+              <li key={id}>
+                {date}
+                <br />
+                {title}
+                <br />
+                {id}
+              </li>
+            ))}
+          </ul>
+          <ul>
+            
             <li>
               <Link href="/posts/hello-world">
                 <a>Hello World!</a>
               </Link>
             </li>
             <li>
-              <Link href="/posts/hello-world">
-                <a>Goodbye World!</a>
+              <Link href="/posts/rss-feed">
+                <a>Adding an RSS Feed!</a>
               </Link>
             </li>
             <li>
-              <Link href="/posts/hello-world">
-                <a>It's a World!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>It's a Small World!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>Sick Sad World!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>The World is Round!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>The World is Flat!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>The World is a Spaceship!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>Hello Govenor!</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>Hello! Can I have just a few minutes of your time?</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts/hello-world">
-                <a>Just another test link.</a>
+              <Link href="/posts/adding-stuff-with-js">
+                <a>Adding DOM Elements with JS</a>
               </Link>
             </li>
           </ul>
